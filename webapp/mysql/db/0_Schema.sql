@@ -36,3 +36,6 @@ CREATE TABLE isuumo.chair
     popularity  INTEGER         NOT NULL,
     stock       INTEGER         NOT NULL
 );
+
+ALTER TABLE isuumo.estate ADD INDEX low_rent(rent);
+ALTER TABLE isuumo.chair ADD INDEX low_price(price);
